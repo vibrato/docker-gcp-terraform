@@ -16,7 +16,7 @@ RUN curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terra
     cat terraform_${TERRAFORM_VERSION}_SHA256SUMS | grep linux_amd64.zip | sha256sum -c && \
     unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /bin
 
-FROM alpine:latest
+FROM gcr.io/cloud-builders/gcloud
 
 COPY --from=builder /bin/terraform /bin/terraform
 
