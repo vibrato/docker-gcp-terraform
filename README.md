@@ -1,6 +1,9 @@
-# docker-terraform
+# Docker container with Terraform and GCP SDK
 
 A docker container for Hashicorp's [terraform](https://terraform.io).
+
+It also includes [Google Cloud SDK](https://cloud.google.com/sdk/) which is needed for the [Google Cloud Provider](https://www.terraform.io/docs/providers/google/index.html)
+
 
 ## Security
 
